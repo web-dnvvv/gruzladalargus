@@ -1,0 +1,272 @@
+@charset "windows-1251";
+/* CSS Document */
+html, .body{
+	margin:0;
+	padding:0;
+	height:100%;
+
+	}
+	
+	/*.body_color{
+		background-color:#5C5C5C;
+		}*/
+.wrapper{
+	min-height:100%;
+	display:flex;
+	flex-direction:column;
+	max-width:1920px;
+	}	
+	
+.header{	
+	background-color:#A9ADB8;
+	margin:0;
+	border-bottom:solid 2px #000000;
+	min-width:625px;
+	}
+
+
+
+	.img_logo{
+		width:20%;
+		min-width:130px;
+		max-height:80px;
+		max-width:190px;
+		display:block;
+		padding-left:3%;
+		padding-right:3%;
+		float:left;}
+	.img_nav{
+		width:10%;
+		max-height:80px;
+		max-width:80px;
+		min-height:60px;
+		min-width:60px;
+		padding-right:3%;
+		float:left;}
+		
+	/*.nav{
+		display:none;
+		position:absolute;
+		border:1px solid #000000;
+		background-color:#FFED6C;
+		margin-left:-10%;
+		width:15%;
+		min-width:250px;
+		font-size:30px;}
+		
+		.nav a{
+			display:block;
+			text-decoration:none;
+			padding:15px;
+			color:#000000;}*/
+		
+		/*стиль для первой ссылкм в навигации*/	
+		/*.nav a:first-child{
+			font-weight:600;
+			text-align:right;}
+			
+		.nav a:hover{
+			background-color:#80FF00;}*/
+		
+	.tel{
+		float:right;
+		padding-right:3%;
+		text-decoration:none;
+		font-size:20px;
+		text-align:center;
+		color:#FF0000;
+		}
+	.phone_logo{
+		display:none;}
+			
+	h1{
+		text-align:center;
+	}
+
+.main{
+	flex-grow:1; /*Чтобы раздел занимал всё пустое пространство в блоке Div и  подвал прижимался к низу*/
+	min-width:620px;
+	}
+	
+.section{
+	/*outline:solid 1px #FF0080;*/
+	display:flex;
+	
+	
+	}
+	
+	/*тел для мобильного сайта*/
+.tel-mobil{
+	display:none;}
+
+/*ФОРМА ЗАКАЗА ОНЛАЙН*/		
+.form-order{
+	display:inline-block;
+	width:30%;
+	max-width:600px;
+	min-width:209px;
+	margin-left:3%;
+	margin-top:15px;
+	padding:10px;
+	border:solid 3px #4B4B4B;
+	background-color:#F9F9F9;
+	font-size:20px;
+	
+	}	
+	
+	.form-order-title{
+		text-align:center;}
+		
+	.form-order label{
+		display:block;
+		width:95%;
+		font-size:24px;
+		text-align:right;
+
+		}
+	.form-order-input{
+		margin-left:3%;
+		font-size:20px;
+		width:50%;
+		min-width:200px;
+		max-width:300px;
+		border:2px solid #004080;
+		}
+		
+	.button_submit{
+		background-color:#959595;
+		font-size:20px;
+		color:#FF0000;
+		font-weight:400;
+		border:solid 2px #000000;
+		border-radius:5px;
+		margin-top:30px;
+		padding:5px;}
+
+/*ФОРМА ДЛЯ СООБЩЕНИЯ РАЗРАБОТЧИКАМ*/		
+.container-form{
+	width:100%;
+	min-height:100%;
+	margin:0;
+	padding-top:40px;
+	box-sizing:border-box;
+	background-color:#5C5C5C;}
+		
+.form-comment{
+	width:90%;
+	min-width:230px;
+	max-width:400px;
+	border:solid 3px #090909;
+	border-radius:10px;
+	padding-left:3%;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:3%;
+	margin:0px auto;
+	background-color:#FFFFFF;
+	}
+	
+	.form-comment a{
+		text-align:center;
+		font-size:18px;
+		margin:0 auto;
+		}
+		
+	.form-comment h2{
+		text-align:center;}
+		
+	.form-comment input, label, textarea{
+		display:block;
+		width:80%;
+		}
+		
+	.form-comment label{
+		font-size:24px;
+		margin:20px auto 0 auto;}
+		
+	.form-comment input {
+		font-size:20px;
+		margin:0 auto 0 auto;}
+		
+	.form-comment textarea{
+		font-size:18px;
+		margin:0 auto 0 auto;}
+		
+
+/*ПРАВАЯ ЧАСТЬ САЙТА - ОКАЗЫВАЕМЫЕ УСЛУГИ И СЕРВИС*/		
+		
+.blockService{
+/*	outline:solid 1px #FFFF00;*/
+	display:inline-block;
+/*	height:100%;*/
+	width:65%;
+	min-width:209px;
+	margin-left:5%;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:30px;
+	color:#008040;
+	/*text-align:center;*/
+	}
+	.blockService ul{
+		margin-bottom:0px;}
+		
+	.blockService li{
+		margin-left:3%;
+		}
+		
+	.blockService-rule{
+		font-size:16px;
+		margin-top:10px;
+		margin-bottom:30px;
+		color:#D26900;
+		text-decoration:underline;}
+		
+	.blockService-advantage{
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:24px;
+		font-style:italic;
+		color:#7D003F;}
+		
+/*БЛОК С РИСУНКАМИ РАЗМЕРОВ БАГАЖНОГО ОТДЕЛЕНИЯ*/		
+.blockImg{
+/*	outline:solid 1px #FFFF00;*/
+	display:inline-block;
+	padding:10px;
+	width:40%;
+/*	min-width:550px;*/
+	margin-left:3%;
+	text-align:center;
+	min-width:209px;
+	max-width:785px;
+	}
+	
+	.img_1{
+		width:100%;
+		pointer-events:none;}
+			
+	.img_2{
+		width:50%;
+		pointer-events:none;}
+		
+/*ПОДВАЛ САЙТА*/	
+.footer{
+	flex-shrink:0; /*прижимаем подвал к низу*/
+	min-height:50px;
+	mardin-top:15px;
+	background-color:#8E8E8E;
+	min-width:625px;
+	text-align:center;}
+	
+	.footer a{
+	display:inline;
+	/*margin-left:5%;*/
+	text-decoration:none;
+	font-size:14px;
+	
+	}
+	.footer p{
+		display:inline-block;
+		text-align:left;
+		padding-left:3%;
+		padding-right:3%;
+		color:#FFFFFF;}

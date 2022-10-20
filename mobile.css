@@ -1,0 +1,225 @@
+@charset "windows-1251";
+/* CSS Document */
+html, .body{
+	margin:0;
+	padding:0;
+	height:100%;
+	max-width:1920px;
+
+	}
+.wrapper{
+	min-height:100%;
+	display:inline-block;
+	/*flex-direction:column;*/
+	}	
+	
+.header{	
+	background-color:#A9ADB8;
+	margin:0;
+	border-bottom:solid 2px #000000;
+	min-width:280px;
+	text-align:center;
+	}
+
+	.header h1{
+		text-align:center;
+		padding-left:5%;
+		width:78%;}
+
+	.img_logo{
+		width:20%;
+		min-width:130px;
+		max-height:80px;
+		max-width:190px;
+		display:none;   /*отключаем логотип для мобоильных*/
+		padding-left:3%;
+		padding-right:3%;
+		float:left;}
+		
+	#linkNav{
+		display:none;}/*отключаем значек навигации на мобильном*/
+		
+	/*.nav{
+		width:10%;
+		display:inline-block;
+		max-height:120px;
+		max-width:120px;
+		min-height:80px;
+		min-width:80px;
+		padding-right:3%;
+		margin-left:5%;
+		float:left;}*/
+		
+	.tel{
+		float:none;
+		display:none;
+		padding-right:0%;
+		}
+		
+		.tel a{
+			text-decoration:underline;
+			font-size:20px;
+			text-align:center;
+			color:#FF0000;
+			}
+		
+	.phone_logo{
+		position:fixed;
+		animation:myanimation 5s 1 linear;
+		display:block;
+		width:20%;
+		/*top:20px;*/
+		bottom:20px;
+		right:2%;
+		/*opacity: 0;*/
+		}	
+		 
+		 /*задание времени анимации длЯ рисунка телефонная трубка*/
+		 @keyframes myanimation{
+			 0%{opacity: 0;}
+			 30%{opacity: 0;}
+			 60%{opacity: 0.7;}
+			 100%{opacity: 1;}
+			 }
+			
+	h1{
+		text-align:center;
+		font-size:32px;
+		display:inline-block;
+		margin:0;
+		padding:0 5%;
+	}
+
+.main{
+	flex-grow:1; /*Чтобы раздел занимал всё пустое пространство в блоке Div и  подвал прижимался к низу*/
+	min-width:280px;
+	text-align:center;
+	}
+	
+.section{
+	/*outline:solid 1px #FF0080;*/
+	display:inline-block;
+	}
+	
+	/*тел для мобильного сайта*/
+.tel-mobil{
+	display:inline-block;
+	font-size:24px;
+/*	border:solid 3px #4B4B4B;
+*/	width:80%;
+	max-width:600px;
+	min-width:209px;
+	margin-left:3%;
+	margin-left:3%;
+	margin-top:5px;
+	margin-bottom:0px;}
+	
+	.tel-mobil-red{
+		color:#D20000;}
+	
+
+/*ФОРМА ЗАКАЗА ОНЛАЙН*/			
+.form-order{
+	display:inline-block;
+	width:80%;
+	max-width:600px;
+	min-width:209px;
+	margin-left:3%;
+	margin-top:15px;
+	padding:10px;
+	border:solid 3px #4B4B4B;
+	background-color:#F9F9F9;
+	font-size:20px;
+	
+	}	
+	
+	.form-order-title{
+		/*font-size:16px;*/
+		margin-top:2px;}
+	
+	.form-order label{
+		display:block;
+		font-size:24px;
+		text-align:right;
+
+		}
+	.form-order-input{
+		margin-left:3%;
+		font-size:24px;
+		width:50%;
+		min-width:200px;
+		max-width:300px;
+		}
+		
+	.button_submit{
+		background-color:#959595;
+		font-size:20px;
+		color:#FF0000;
+		font-weight:400;
+		border:solid 2px #000000;
+		border-radius:5px;
+		margin-top:30px;
+		padding:5px;}
+
+
+/*ПРАВАЯ ЧАСТЬ САЙТА - БЛОК ОКАЗЫВАЕМЫЕ УСЛУГИ И СЕРВИС*/		
+				
+.blockService{
+	/*outline:solid 1px #FFFF00;*/
+	display:inline-block;
+/*	height:100%;*/
+	width:80%;
+	min-width:209px;
+	margin-left:5%;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:24px;
+	color:#008040;
+	/*text-align:center;*/
+	}
+	.blockService li{
+		text-align:left;}
+		
+	.blockService-advantage{
+		display:none;}
+		
+/*БЛОК С РИСУНКАМИ РАЗМЕРОВ БАГАЖНОГО ОТДЕЛЕНИЯ*/		
+.blockImg{
+	/*outline:solid 1px #FFFF00;*/
+	display:inline-block;
+	padding:10px;
+	width:80%;
+/*	min-width:550px;*/
+	margin-left:3%;
+	text-align:center;
+	min-width:209px;
+	max-width:785px;
+	}
+	
+	
+
+/*#blockImg_1:focus img {
+	width:150%;
+	}
+	
+#blockImg_1:focus	div{
+	overflow:scroll;}*/
+
+	.img_1{
+		width:100%;
+		pointer-events:auto;
+		overflow:hidden;}
+			
+	.img_2{
+		width:50%;
+		pointer-events:auto;}
+		
+		
+/*ПОДВАЛ САЙТА*/	
+.footer{
+	flex-shrink:0; /*прижимаем подвал к низу*/
+	min-height:50px;
+	mardin-top:15px;
+	background-color:#8E8E8E;
+	min-width:280px;
+	text-align:left;}
+	
